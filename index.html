@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv= "X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube subscribe button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center><p><h1>Youtube subscribe button</h1></p></center><br> 
+    <center><button onclick="
+
+    subscribe();
+    " class="js-subscribe-button subscribe-button">Subscribe</button></center>
+
+    <script>
+        function subscribe(){
+
+            const buttonElement = 
+            document.querySelector('.js-subscribe-button');
+            if(buttonElement.innerText === 'Subscribe')
+            {
+                buttonElement.innerText = 'Subscribed';
+                buttonElement.classList.add('is-subscribed');
+            } else {
+                buttonElement.innerText = 'Subscribe';
+                buttonElement.classList.remove('is-subscribed');
+            }
+                }
+
+    </script>
+</body>
+</html>
